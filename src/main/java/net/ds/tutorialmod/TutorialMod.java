@@ -1,5 +1,7 @@
 package net.ds.tutorialmod;
 
+import net.ds.tutorialmod.block.ModBlocks;
+import net.ds.tutorialmod.item.ModItemGroups;
 import net.ds.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +17,7 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
